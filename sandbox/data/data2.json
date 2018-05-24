@@ -1,0 +1,17 @@
+{
+ "WEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT":{
+   "value": "[ 3, 7, 9 ]",
+   "type": "string",
+   "description": "newkey for me__SLASH__",
+   "encryption": 0,
+   "apps_to_access:": [
+     "app1",
+     "app2"
+   ],
+   "primary application": "eeet",
+   "author": "justin",
+   "created_date": "date",
+   "last_modified": "date"
+ },
+  "BBBY_GROUP": "did I take this"
+ }
