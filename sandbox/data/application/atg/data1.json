@@ -1,4 +1,9 @@
 {
+ "NEWTEST": {
+   "hello":"env02newvalue",
+   "helo2":"newvalue2"
+ },
+ 
  "wow":"wowvalue",
  "George_Key":"GeorgeValue",
  "WEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT":{
@@ -9,6 +14,19 @@
    "apps_to_access:": [
      "app1",
      "app2"
+   ],
+   "primary application": "xt",
+   "author": "george",
+   "created_date": "date",
+   "last_modified": "date"
+ },
+ "WEBLOGIC.JOBS_BUBBAGUMP":{
+   "value": "[ 3, 7, 9 ]",
+   "type": "integer",
+   "description": "newkey for me__SLASH__",
+   "encryption": 0,
+   "apps_to_access": [
+     "GLOBAL"
    ],
    "primary application": "xt",
    "author": "george",

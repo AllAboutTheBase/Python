@@ -1,0 +1,97 @@
+{
+    "MERGETEST:6 ARRARY ONLY COMMON": [
+        "hello",
+        "app1",
+        "app2"
+    ],
+    "MERGETEST:9": {
+        "dgfggf": 12346464,
+        "CRITICAL": "CRITICAL",
+        "value": "test",
+        "myArray:": [
+            "CRITICAL",
+            "app1",
+            "app2"
+        ],
+        "last_modified": "date"
+    },
+    "HIGH_LEVEL": "GDGDG",
+    "HIGH_LEVEL2": "ssGDGDG",
+    "KEY": {
+        "VALUE01": "common_hello2",
+        "VALUE03": "common_hello"
+    },
+    "NEWTEST": {
+        "hello": "env02newvalue",
+        "helo2": "newvalue2"
+    },
+    "wow": "wowvalue",
+    "George_Key": "GeorgeValueenv",
+    "WEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT": {
+        "value": "[ 3, 7, 9 ]",
+        "type": "integer",
+        "description": "newkey for me__SLASH__",
+        "encryption": 1,
+        "apps_to_access:": [
+            "app1",
+            "app2"
+        ],
+        "primary application": "xt",
+        "author": "george",
+        "created_date": "date",
+        "last_modified": "date",
+        "apps_to_access": [
+            "app1",
+            "app2"
+        ]
+    },
+    "WEBLOGIC.JOBS_BUBBAGUMP": {
+        "value": "[ 3, 7, 9 ]",
+        "type": "integer",
+        "description": "newkey for me__SLASH__",
+        "encryption": 0,
+        "apps_to_access": [
+            "GLOBAL"
+        ],
+        "primary application": "xt",
+        "author": "george",
+        "created_date": "date",
+        "last_modified": "date"
+    },
+    "BBBY_USER": "bbbyuser",
+    "BBBY_GROUP": "bbbyuser",
+    "DEPLOY_USER": "bbbyrelease",
+    "DEPLOY_GROUP": "bbbyrelease",
+    "APPLICATION_NAME": "atg",
+    "JDK_VERSION": "1.7.0_131",
+    "JDK_FILENAME": "jdk-7u131-linux-x64.rpm",
+    "MERGETEST:2_IN COMMON and ENVV": "COMMON",
+    "MERGETEST:4 COMMON and ENV2": {
+        "hello": "env2_hello",
+        "helo2": "env2_hello2"
+    },
+    "MERGETEST:5 COMMON and ENV2 DIFF ENV2": {
+        "NewForENvv": "envnew_hello",
+        "helo2": "env override"
+    },
+    "MERGETEST:7 ARRARY COMMON and ENV2": [
+        "hello",
+        "app1",
+        "app2"
+    ],
+    "MERGETEST:8 ARRARY COMMON and ENV2 MIX MATCH": [
+        "app1",
+        "app3"
+    ],
+    "primary application": "env02common",
+    "apps_to_access": [
+        "hello",
+        "app1",
+        "app2"
+    ],
+    "MyTest": {
+        "hello": "env02newvalue",
+        "helo2": "newvalue2"
+    },
+    "integer1": 313
+}

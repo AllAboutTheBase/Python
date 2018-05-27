@@ -61,15 +61,15 @@ class Hiera(object):
     The Hiera object represents a first-class interaction between Python and
     Hiera data. It takes a base-hiera config YAML file, and exposes methods
     to retrieve and fully resolve Hiera data.
-    :param base_file: The Hiera base configuration file path or file-like object
+    :param heira_file: The Hiera base configuration file path or file-like object
     :param backends: A list of backends to use for loading, by default this is
         YAMLBackend and JSONBackend
     :param context: Any dictionary of format/context variables to default for the
         liftime of this instance.
     :param kwargs: Any additional kwargs will be added to the context
     """
-    def __init__(self, base_file, backends=None, context={}, **kwargs):
-        self.base_file = base_file
+    def __init__(self, heira_file, backends=None, context={}, **kwargs):
+        self.heira_file = heira_file
         self.context = context
         self.context.update(kwargs)
 
@@ -86,14 +86,14 @@ class Hiera(object):
         """
 
         # If we don't have a file-like object, attempt to open as a file path
-        if not hasattr(self.base_file, 'read'):
-            self.base_path = os.path.dirname(self.base_file)
-            self.base_file = open(self.base_file)
+        if not hasattr(self.heira_file, 'read'):
+            self.base_path = os.path.dirname(self.heira_file)
+            self.heira_file = open(self.heira_file)
         else:
             self.base_path = os.getcwd()
 
         # Load our base YAML configuration
-        self.base = YAMLBackend.load_ordered(self.base_file)
+        self.base = YAMLBackend.load_ordered(self.heira_file)
 
         if not self.base:
             raise Exception("Failed to parse base Hiera configuration")

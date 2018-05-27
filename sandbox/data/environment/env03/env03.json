@@ -1,0 +1,30 @@
+{
+ "MERGETEST:7 ARRARY ONLY COMMON": [
+     "hello",
+     "app1",
+     "app2"
+   ],
+ "MERGETEST:6 ARRARY ONLY COMMON": [
+     "wjdhdhdhdhhello",
+     "adjhdhdhdh",
+     "app2"
+   ],
+"MERGETEST:9":{
+   "dgfggf":6464,
+   "hellonew to env only":"dhhfg",
+   "value": "test",
+   "myArray:": [
+     "wwwwCRITICAL",
+     "app1",
+     "app2"
+   ],
+   "last_modified": "envdate"
+ },
+
+    "HIGH_LEVELONLY ENV": "GDGDG",
+    "HIGH_LEVEL2": "ssGDGDssssssenvG",    
+    "KEY": {
+        "VALUE01":"env_hello",
+        "VALUE02":"env_hello2"
+    }
+ }

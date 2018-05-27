@@ -1,23 +1,17 @@
-:backends:
-        - json
-
 :hierarchy:
-        - "nodes\\%{environment}\\%{clientcert}"
-        - "nodes\\%{clientcert}"
-        - "environment\\%{environment}\\%{application}"
-        - "environment\\%{environment}"
+        - "nodes/{environment}/{clientcert}"
+        - "nodes/{clientcert}"
+        - "environment/{environment}/{application}"
+        - "environment/{environment}"
         - "environment"
-        - "application\\%{application}"
-        - "datacenter\\%{datacenter}"
+        - "application/{application}"
+        - "datacenter/{datacenter}"
         - common
-        - common\\weblogic
-        - common\\httpd
-        - common\\selenium
-        - common\\ant
-        - common\\java
-        - common\\newrelic
-:json:
-#        :datadir: .\\data
-        :datadir: C:\\WS_EAODEPLOY3\\Sandbox\\data\\
-#        :datadir: \\data\\bbb\\eao_deploy\\config\\data
-##        :datadir: \\local1\\home\\weblogic\\eao_deploy\\config\\data
+        - common/weblogic
+        - common/httpd
+        - common/selenium
+        - common/ant
+        - common/java
+        - common/newrelic
+:rootPath:
+        :datadir: /Users/gr0005/git/Python/sandbox/data/

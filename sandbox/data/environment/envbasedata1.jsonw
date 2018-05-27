@@ -1,17 +1,19 @@
 {
- "George_Key":"GeorgeValue",
- "WEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT":{
-   "CRITICAL":"CRITICAL",
-   "value": "[ 3, 7, 9 ]",
-   "apps_to_access:": [
-     "app1",
+  "apps_to_access": [
+     "app1sss",
+     "rock",
      "app2"
    ],
-   "last_modified": "date"
+ "MyTest": {
+   "newValue":"ThisOne is common",
+   "hello":"env02newvalue",
+   "helo2":"newvalue2"
  },
- "xxxxWEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT":{
+   
+ "George_Key":"GeorgeValueenvhigh",
+ "WEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT":{
    "value": "[ 3, 7, 9 ]",
-   "type": "integer",
+   "type": "integersss",
    "description": "newkey for me__SLASH__",
    "encryption": 0,
    "apps_to_access:": [
@@ -29,9 +31,5 @@
   "DEPLOY_GROUP": "bbbyrelease",
   "APPLICATION_NAME": "atg",
   "JDK_VERSION": "1.7.0_131",
-  "JDK_FILENAME": "jdk-7u131-linux-x64.rpm",
-  
-  "MULTI":[
-    1,2
-  ]
+  "JDK_FILENAME": "jdk-7u131-linux-x64.rpm"
 }

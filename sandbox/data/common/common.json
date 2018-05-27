@@ -1,0 +1,27 @@
+{
+ "MERGETEST:6 ARRARY ONLY COMMON": [
+     "hello",
+     "app1",
+     "app2"
+   ],
+   "MERGETEST:9":{
+   "dgfggf":12346464,
+   "CRITICAL":"CRITICAL",
+   "value": "test",
+   "myArray:": [
+     "CRITICAL",
+     "app1",
+     "app2"
+   ],
+   "last_modified": "date"
+ },
+   
+
+    "HIGH_LEVEL": "GDGDG",
+    "HIGH_LEVEL2": "ssGDGDG",
+    "KEY": {
+        "VALUE01":"common_hello2",
+        "VALUE03":"common_hello"
+        
+    }
+ }

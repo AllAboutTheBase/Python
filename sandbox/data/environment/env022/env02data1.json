@@ -1,10 +1,33 @@
 {
+"MERGETEST:2_IN COMMON and ENVV":"COMMON",
+"MERGETEST:4 COMMON and ENV2": {
+   "hello":"env2_hello",
+   "helo2":"env2_hello2"
+ },
+"MERGETEST:5 COMMON and ENV2 DIFF ENV2": {
+   "NewForENvv":"envnew_hello",
+   "helo2":"env override"
+ },
+
+ "MERGETEST:7 ARRARY COMMON and ENV2": [
+     "hello",
+     "app1",
+     "app2"
+   ],
+ "MERGETEST:8 ARRARY COMMON and ENV2 MIX MATCH": [
+     "app1",
+     "app3"
+   ],
+   
+ "primary application": "env02common",
+ 
  "apps_to_access": [
+     "hello",
      "app1",
      "app2"
    ],
  "MyTest": {
-   "hello":"newvalue",
+   "hello":"env02newvalue",
    "helo2":"newvalue2"
  },
  "George_Key":"GeorgeValueenv",
@@ -12,9 +35,8 @@
    "value": "[ 3, 7, 9 ]",
    "type": "integer",
    "description": "newkey for me__SLASH__",
-   "encryption": 0,
+   "encryption": 1,
    "apps_to_access": [
-     "ADD HERE TOO",
      "app1",
      "app2"
    ],

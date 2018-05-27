@@ -1,0 +1,63 @@
+{
+"MERGETEST:1_IN COMMON ONLY":"THIS IS IN COMMON ONLY",
+"MERGETEST:2_IN COMMON and ENVV":"COMMON",
+"MERGETEST:3 COMMON ONLY": {
+   "hello":"common_hello",
+   "helo2":"common_hello2"
+ },
+"MERGETEST:4 COMMON and ENV2": {
+   "hello":"common_hello",
+   "helo2":"common_hello2"
+ },
+"MERGETEST:5 COMMON and ENV2 DIFF ENV2": {
+   "hello":"common_hello",
+   "helo2":"common_hello2"
+ },
+ "MERGETEST:6 ARRARY ONLY COMMON": [
+     "hello",
+     "app1",
+     "app2"
+   ],
+ 
+ "MERGETEST:7 ARRARY COMMON and ENV2": [
+     "hello",
+     "app1",
+     "app2"
+   ],
+ "MERGETEST:8 ARRARY COMMON and ENV2 MIX MATCH": [
+     "hello",
+     "app1",
+     "app2"
+   ],
+
+"MERGETEST:9":{
+   "CRITICAL":"CRITICAL",
+   "value": "test",
+   "myArray:": [
+     "CRITICAL",
+     "app1",
+     "app2"
+   ],
+   "last_modified": "date"
+ },
+ "NEWTEST": {
+   "gfgfgfg":"fgfhfhfh",
+   "hello":"env02newvalue",
+   "helo2":"newvalue2"
+ },
+"WEBLOGIC.JOBS_SERVERS.MANAGED_SERVERS.COUNT":{
+   "CRITICAL":"CRITICAL",
+   "value": "[ 3, 7, 9 ]",
+   "apps_to_access:": [
+     "CRITICAL",
+     "app1",
+     "app2"
+   ],
+   "last_modified": "date"
+ },
+   "common": "common",
+   "primary application": "common",
+   "author": "common",
+   "created_date": "common",
+   "last_modified": "common"
+ }
