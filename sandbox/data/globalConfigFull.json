@@ -15,6 +15,32 @@
         ],
         "last_modified": "date"
     },
+    "INTERPOLATE_USE1": {
+        "value": "{{INTERPOLATE_KEY1}}",
+        "type": "integer",
+        "description": "newkey for me__SLASH__",
+        "encryption": 0,
+        "apps_to_access": [
+            "GLOBAL"
+        ],
+        "primary application": "xt",
+        "author": "george",
+        "created_date": "date",
+        "last_modified": "date"
+    },
+    "INTERPOLATE_USE2": {
+        "value": "{{INTERPOLATE_KEY1}}{{INTERPOLATE_KEY2}}-{{INTERPOLATE_KEY1}}",
+        "type": "integer",
+        "description": "newkey for me__SLASH__",
+        "encryption": 0,
+        "apps_to_access": [
+            "GLOBAL"
+        ],
+        "primary application": "xt",
+        "author": "george",
+        "created_date": "date",
+        "last_modified": "date"
+    },
     "HIGH_LEVEL": "GDGDG",
     "HIGH_LEVEL2": "ssGDGDG",
     "KEY": {
@@ -52,6 +78,33 @@
         "encryption": 0,
         "apps_to_access": [
             "GLOBAL"
+        ],
+        "primary application": "xt",
+        "author": "george",
+        "created_date": "date",
+        "last_modified": "date"
+    },
+    "INTERPOLATE_KEY1": {
+        "value": "Humpty Dumpty",
+        "type": "integer",
+        "description": "newkey for me__SLASH__",
+        "encryption": 0,
+        "apps_to_access": [
+            "GLOBAL"
+        ],
+        "primary application": "xt",
+        "author": "george",
+        "created_date": "date",
+        "last_modified": "date"
+    },
+    "INTERPOLATE_KEY2": {
+        "value": "Sitting On A Wall",
+        "type": "integer",
+        "description": "newkey for me__SLASH__",
+        "encryption": 0,
+        "apps_to_access": [
+            "atg",
+            "eom"
         ],
         "primary application": "xt",
         "author": "george",

@@ -33,6 +33,33 @@
    "created_date": "date",
    "last_modified": "date"
  },
+ "INTERPOLATE_KEY1":{
+   "value": "Humpty Dumpty",
+   "type": "integer",
+   "description": "newkey for me__SLASH__",
+   "encryption": 0,
+   "apps_to_access": [
+     "GLOBAL"
+   ],
+   "primary application": "xt",
+   "author": "george",
+   "created_date": "date",
+   "last_modified": "date"
+ },
+ "INTERPOLATE_KEY2":{
+   "value": "Sitting On A Wall",
+   "type": "integer",
+   "description": "newkey for me__SLASH__",
+   "encryption": 0,
+   "apps_to_access": [
+     "atg",
+     "eom"
+   ],
+   "primary application": "xt",
+   "author": "george",
+   "created_date": "date",
+   "last_modified": "date"
+ },
   "BBBY_USER": "bbbyuser",
   "BBBY_GROUP": "bbbyuser",
   "DEPLOY_USER": "bbbyrelease",

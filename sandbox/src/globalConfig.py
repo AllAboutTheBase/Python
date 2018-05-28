@@ -88,13 +88,9 @@ class GlobalConfig(object):
         
 
     def printOrderedJSON(self):
-        print ("===================================================")    
-        print ("===================================================")  
         print (json.dumps(self.jsonMerged, indent=4, sort_keys=True))
           
 
     def writeOrderedJSON(self):
-        print ("===================================================")    
-        print ("===================================================")  
         with open(self.rootDataDir+"/globalConfigFull.json", 'w') as fp:
             json.dump(self.jsonMerged, fp,indent=4)
