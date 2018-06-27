@@ -1,6 +1,6 @@
 
-    INTERPOLATE_USE1: Humpty Dumpty,
-    INTERPOLATE_USE2: Humpty DumptySitting On A Wall-Humpty Dumpty,
+    INTERPOLATE_USE1: Humpty Dumpty_some More,
+    INTERPOLATE_USE2: Humpty Dumpty_some MoreSitting On A Wall-Humpty Dumpty_some More,
     WEBLOGIC.JOBS_BUBBAGUMP: [ 3, 7, 9 ],
     INTERPOLATE_KEY1: Humpty Dumpty,
     INTERPOLATE_KEY2: Sitting On A Wall

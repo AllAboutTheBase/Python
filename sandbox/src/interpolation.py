@@ -23,20 +23,26 @@ class Interpolate(object):
         self.fullFileName=fullJSONFile
         
     def interpolateDict(self):
-        regex = re.compile(r'('+ self.startDelim + '[0-9a-zA-Z_-\|]+'+self.endDelim +')')
+        regex = re.compile(r'('+ self.startDelim + '[0-9a-zA-Z._-\|]+'+self.endDelim +')')
         
-        for key,value in self.globalConfig.items():
-            tokenList=regex.findall(value)
-            tokenList= set(tokenList)     # unique token list
-            replacedValue=value
-            for token in tokenList:
-                tokenKey = token.replace(self.startDelim, "")
-                tokenKey= tokenKey.replace(self.endDelim,"")
-                replacedValue = replacedValue.replace(token, self.globalConfig[tokenKey])
-            self.globalConfig[key]=replacedValue
-
+        while True:
+            tokensWereNotReplaced=True
+            for key,value in self.globalConfig.items():
+                tokenList=regex.findall(value)
+                tokenList= set(tokenList)     # unique token list
+                replacedValue=value
+                for token in tokenList:
+                    tokenKey = token.replace(self.startDelim, "")
+                    tokenKey= tokenKey.replace(self.endDelim,"")
+                    replacedValue = replacedValue.replace(token, self.globalConfig[tokenKey])
+                    tokensWereNotReplaced=False 
+                self.globalConfig[key]=replacedValue
+            if tokensWereNotReplaced:
+                break
+        
+        
     def interpolateTemplate(self, fullTmplFile):
-        regex = re.compile(r'('+ self.startDelim + '[0-9a-zA-Z_-\|]+'+self.endDelim +')')
+        regex = re.compile(r'('+ self.startDelim + '[0-9a-zA-Z._-\|]+'+self.endDelim +')')
         newFullTmplFile = fullTmplFile.split(self.tmpl_exten)[0]
         with open(fullTmplFile,'r') as fInput:
             with open(newFullTmplFile,'w') as fOutput:
@@ -48,7 +54,11 @@ class Interpolate(object):
                     for token in tokenList:
                         tokenKey = token.replace(self.startDelim, "")
                         tokenKey= tokenKey.replace(self.endDelim,"")
-                        newLine = newLine.replace(token, self.globalConfig[tokenKey])
+                        try:
+                            newLine = newLine.replace(token, self.globalConfig[tokenKey])
+                        except Exception as e:
+                            print ("ERROR: Invalid token:" + str(e) +" In File:"+ fullTmplFile)
+                            raise
                     print(newLine, file=fOutput)              
 
     def interpolate(self, path):

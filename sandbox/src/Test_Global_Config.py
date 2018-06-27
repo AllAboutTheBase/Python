@@ -2,6 +2,7 @@
 from globalConfig import GlobalConfig
 from configParser import ConfigParser
 from interpolation import Interpolate
+from convertOld2New import ConvertOld2New
 
 dataPath = "/Users/gr0005/git/Python/sandbox/data"
 heiraFile1="sample.yaml"
@@ -40,6 +41,15 @@ i.writeOrderedJSON(dataPath)
 #i.interpolateTemplate(dataPath+"/sample.txt.tmpl")
 i.interpolate(dataPath+"/multidir")
 #i.interpolate(dataPath+"/multidir/sample.txt.tmpl")
+
+
+print ("***************** PARTIAL KEYS  ***********************")
+cp.jsonFiltered
+
+print ("***************** CONVERT ORIGINAL JSON  ***********************")
+
+co2n=ConvertOld2New()
+co2n.ConvertAllJSON()
 print ("=============================================================")
 print ("=============================================================")
 print ("=======================FINISHED==============================")

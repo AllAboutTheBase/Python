@@ -8,6 +8,7 @@ class ConfigParser(object):
         self.globalConfig={}
         self.jsonFiltered={}
         self.application=""
+        self.st={}
         
     def loadGlobalConfig(self, jsonFile):
         self.globalConfig = json.loads(open(jsonFile).read())
@@ -21,6 +22,22 @@ class ConfigParser(object):
                 return True
         return False
     
+    def addToSuffixTree(self, key):
+        newDict={}
+        pos = key.rfind('.')
+        while pos >0:
+            newKey= key[:pos]
+            newValue=self.jsonFiltered.get(newKey,newKey)
+            if newValue != newKey:
+                nextLevelDict = self.jsonFiltered[newKey]
+                nextLevelDict["value"] = newKey
+            else:
+                self.jsonFiltered[newKey]["value"] = self.jsonFiltered[newKey]["value"]+newKey
+            pos = newKey.rfind('.')
+            
+        
+        
+        
     def filterJSON(self, application):
         self.application=application
         for key,value in self.globalConfig.items():
@@ -28,6 +45,7 @@ class ConfigParser(object):
                 if "apps_to_access" in value:
                     if self.isKeyEligible(["GLOBAL",self.application], value["apps_to_access"]):
                         self.jsonFiltered[key] = value["value"]
+                        #self.addToSuffixTree(key)
                                   
     def printOrderedJSON(self):
             
