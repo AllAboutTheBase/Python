@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 class GlobalConfig(object):
+    # Purpose: Load global config data into consolidated construct merging several JSON files driven by heirarchy defined in YAML file
     def __init__(self, heira_file, context={}, **kwargs):
         self.heira_file = heira_file
         self.context = context

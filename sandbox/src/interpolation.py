@@ -5,6 +5,7 @@ import os
 import re
 
 class Interpolate(object):
+    # Purpose:  Interpolate the global config treating the global config as template.
     def __init__(self, criteria=[]):
         self.criteria=criteria
         self.globalConfig={}

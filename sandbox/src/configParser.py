@@ -3,6 +3,8 @@
 import json
 
 class ConfigParser(object):
+    # Purpose: Given a Consolidated Global Config filter keys only applicable to the application being deployed.
+    
     def __init__(self, criteria=[]):
         self.criteria=criteria
         self.globalConfig={}
